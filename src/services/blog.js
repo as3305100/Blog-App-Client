@@ -59,8 +59,6 @@ async function updatePost(data, blogId){
 
 async function getMyAllPosts(limit=6, page=1){
 
-   console.log("Limit: ", limit)
-
   try {
      const response = await axios.get(`https://blog-app-server-2f1h.onrender.com/api/v1/blogs/my-blogs?limit=${limit}&page=${page}`, {
        withCredentials: true
